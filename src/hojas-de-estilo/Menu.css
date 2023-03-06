@@ -1,0 +1,15 @@
+.sidebar {
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    transition: all 0.5s;
+    background-color: #EBF7F8;
+    z-index: 1;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
