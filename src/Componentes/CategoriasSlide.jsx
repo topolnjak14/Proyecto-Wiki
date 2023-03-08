@@ -68,11 +68,11 @@ const CategoriasSlide = () => {
             onMouseMove={manejarArrastre}
             ref={contenedorRef}
           >
-              <h3 className='pt-3'>Categorias</h3>
+            <h3 className='pt-3 ms-2 fw-bold'>Categorias</h3>
             <div className="carrusel-contenedor" style={{ transform: `translateX(-${indice * 320}px)` }}>
               {categorias.map(categoria => (
-                <div className="carrusel-item" key={categoria.id}>
-                  <h3>{categoria}</h3>
+                <div className="carrusel-item rounded-3" style={{backgroundColor: "#49708A"}} key={categoria.id}>
+                  <h3 className='text-center' style={{color: "#7BCD5F"}}>{categoria}</h3>
                 </div>
               ))}
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import "../hojas-de-estilo/Menu.css";
 import Categorias from "./Categorias";
+import { IconArrowNarrowLeft } from '@tabler/icons-react';
 
 //Logica 
 
@@ -13,7 +14,7 @@ const MenuLateral = ({isOpen, toggleMenu}) => {
 
     return (
         <div className={`sidebar ${isOpen ? "open" : ""}`}>
-                <i onClick={toggleMenu} class="bi bi-arrow-left fs-1"></i>
+                <IconArrowNarrowLeft className='ms-2 pt-3' onClick={toggleMenu} style = {{width:"3em", height: "auto", color: "#49708A"}} /> 
                 <Categorias/>
         </div>
     );

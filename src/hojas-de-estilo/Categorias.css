@@ -1,0 +1,22 @@
+ul {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+li {
+    width: 90%;
+    list-style: none;
+    border: 1px solid #49708A;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: #49708A;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #7BCD5F;
+}

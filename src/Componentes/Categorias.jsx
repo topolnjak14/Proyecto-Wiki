@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import "../hojas-de-estilo/Categorias.css";
 
 
 const Categorias = () => {
@@ -12,8 +13,8 @@ const Categorias = () => {
      }, []); //array vacio[], se ejecutara una vez cuando se llame el componente
   
     return (
-      <div>
-          <ul>
+      <div className=' d-flex justify-content-evenly align-items-center  w-100 h-100 '>
+          <ul className='text-center'>
             {data?.map((categoria) => (
                 <li key={categoria}>{categoria}</li>
             ))}
